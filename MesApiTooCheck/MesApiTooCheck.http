@@ -1,0 +1,6 @@
+@MesApiTooCheck_HostAddress = http://localhost:5127
+
+GET {{MesApiTooCheck_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

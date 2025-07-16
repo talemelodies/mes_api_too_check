@@ -1,0 +1,11 @@
+.app-container {
+  height: 100%;
+}
+
+mat-toolbar {
+  background: transparent;
+}
+
+.app-content {
+  padding: 24px;
+}

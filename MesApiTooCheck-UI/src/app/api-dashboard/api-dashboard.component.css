@@ -1,0 +1,48 @@
+.dashboard-card {
+  margin: 20px;
+}
+
+.mat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.api-table {
+  width: 100%;
+}
+
+.method-chip {
+  padding: 4px 8px;
+  border-radius: 16px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.method-chip.get { background-color: #4CAF50; }
+.method-chip.post { background-color: #2196F3; }
+.method-chip.put { background-color: #FFC107; }
+.method-chip.delete { background-color: #F44336; }
+
+.status-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-indicator.ok { background-color: #4CAF50; }
+.status-indicator.failed { background-color: #F44336; }
+.status-indicator.unknown { background-color: #9E9E9E; }
+
+td.mat-cell, th.mat-header-cell {
+  padding: 8px;
+}

@@ -1,0 +1,22 @@
+<h2>Test Logs for API #{{apiItemId}}</h2>
+<button mat-stroked-button routerLink="/apis">Back to API List</button>
+
+<mat-card *ngIf="testLogs.length > 0; else noLogs">
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let log of testLogs">
+        <mat-icon mat-list-icon [color]="log.httpStatusCode >= 200 && log.httpStatusCode < 300 ? 'primary' : 'warn'">
+          {{ log.httpStatusCode >= 200 && log.httpStatusCode < 300 ? 'check_circle' : 'error' }}
+        </mat-icon>
+        <div mat-line>Status: {{log.httpStatusCode}}</div>
+        <div mat-line>Timestamp: {{log.testTimestamp | date:'short'}}</div>
+        <div mat-line>Response: {{log.responseBody || 'N/A'}}</div>
+        <div mat-line *ngIf="log.errorMessage">Error: {{log.errorMessage}}</div>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
+
+<ng-template #noLogs>
+  <p>No test logs found for this API.</p>
+</ng-template>

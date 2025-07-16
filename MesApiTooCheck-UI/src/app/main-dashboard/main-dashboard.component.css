@@ -1,0 +1,24 @@
+.dashboard-container {
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.status-card, .logs-card {
+  flex: 1;
+}
+
+.healthy {
+  color: green;
+}
+
+.unhealthy {
+  color: red;
+}
+
+.unknown {
+  color: orange;
+}

@@ -1,0 +1,50 @@
+.dashboard-header {
+  margin-bottom: 24px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.test-data-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-field {
+  flex-grow: 1;
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.table-container {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+table {
+  width: 100%;
+}
+
+.mat-mdc-header-cell {
+  font-weight: 500;
+}

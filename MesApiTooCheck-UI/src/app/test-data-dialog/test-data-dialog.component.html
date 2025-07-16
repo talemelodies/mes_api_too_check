@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>{{ data.testData ? 'Edit' : 'Add' }} Test Data</h1>
+<div mat-dialog-content [formGroup]="form">
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Content</mat-label>
+    <textarea matInput formControlName="content" cdkTextareaAutosize cdkAutosizeMinRows="5"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Content Type</mat-label>
+    <mat-select formControlName="contentType">
+      <mat-option value="application/json">JSON</mat-option>
+      <mat-option value="application/xml">XML</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="form.value" [disabled]="!form.valid">Save</button>
+</div>

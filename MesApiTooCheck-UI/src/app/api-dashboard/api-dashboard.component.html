@@ -1,0 +1,51 @@
+<h2>API Dashboard</h2>
+
+<table mat-table [dataSource]="apiItems" class="mat-elevation-z8">
+
+  <!-- ID Column -->
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> ID </th>
+    <td mat-cell *matCellDef="let item"> {{item.id}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let item"> {{item.name}} </td>
+  </ng-container>
+
+  <!-- URL Column -->
+  <ng-container matColumnDef="url">
+    <th mat-header-cell *matHeaderCellDef> URL </th>
+    <td mat-cell *matCellDef="let item"> {{item.url}} </td>
+  </ng-container>
+
+  <!-- Method Column -->
+  <ng-container matColumnDef="httpMethod">
+    <th mat-header-cell *matHeaderCellDef> Method </th>
+    <td mat-cell *matCellDef="let item"> {{item.httpMethod}} </td>
+  </ng-container>
+
+  <!-- Status Column -->
+  <ng-container matColumnDef="status">
+    <th mat-header-cell *matHeaderCellDef> Status </th>
+    <td mat-cell *matCellDef="let item"> {{item.status}} </td>
+  </ng-container>
+
+  <!-- Actions Column -->
+  <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef> Actions </th>
+    <td mat-cell *matCellDef="let item">
+      <button mat-icon-button (click)="testApi(item.id)" matTooltip="Run Test">
+        <mat-icon>play_arrow</mat-icon>
+      </button>
+      <button mat-button (click)="navigateToTestData(item.id)">Manage Data</button>
+      <button mat-icon-button (click)="navigateToTestLogs(item.id)" matTooltip="View Test Logs">
+        <mat-icon>history</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
