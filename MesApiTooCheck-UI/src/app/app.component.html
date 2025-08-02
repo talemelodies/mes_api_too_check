@@ -1,17 +1,24 @@
-<mat-toolbar color="primary">
-  <span>API Test Manager</span>
-</mat-toolbar>
-
-<mat-sidenav-container>
-  <mat-sidenav mode="side" opened>
-    <mat-nav-list>
-      <a mat-list-item routerLink="/">Dashboard</a>
-      <a mat-list-item routerLink="/apis">API Management</a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <div style="margin: 20px;">
-      <router-outlet></router-outlet>
+<div class="dashboard-container">
+  <header class="top-nav">
+    <a routerLink="/" class="logo-section">
+      <div class="logo-placeholder"></div>
+      <span class="logo-text">API Manager</span>
+    </a>
+    <nav class="main-nav">
+      <a routerLink="/dashboard">Dashboard</a>
+      <a routerLink="/apis">APIs</a>
+      <a>Documentation</a>
+      <a>Support</a>
+    </nav>
+    <div class="user-section">
+      <div class="search-bar">
+        <div class="search-icon-placeholder"></div>
+        <span>Search</span>
+      </div>
+      <div class="user-avatar"></div>
     </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+  </header>
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

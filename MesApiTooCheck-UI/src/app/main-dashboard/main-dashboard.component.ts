@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterModule } from '@angular/router';
 import { ApiItem } from '../api-dashboard/api-dashboard.component';
 
 export interface TestLog {
@@ -18,7 +19,7 @@ export interface TestLog {
 @Component({
   selector: 'app-main-dashboard',
   standalone: true,
-  imports: [CommonModule, MatCardModule, MatListModule, MatIconModule],
+  imports: [CommonModule, MatCardModule, MatListModule, MatIconModule, RouterModule],
   templateUrl: './main-dashboard.component.html',
   styleUrl: './main-dashboard.component.css'
 })

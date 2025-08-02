@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\talem\\OneDrive\\Desktop\\sideproject\\mes_api_too_check\\MesApiTooCheck\\MesApiTooCheck.csproj": {}
+    "C:\\Users\\talem\\OneDrive\\Desktop\\sideproject\\mes_api_too_check\\MesApiTooCheck\\MesApiTooCheck.csproj": {}
   },
   "projects": {
-    "c:\\Users\\talem\\OneDrive\\Desktop\\sideproject\\mes_api_too_check\\MesApiTooCheck\\MesApiTooCheck.csproj": {
+    "C:\\Users\\talem\\OneDrive\\Desktop\\sideproject\\mes_api_too_check\\MesApiTooCheck\\MesApiTooCheck.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\talem\\OneDrive\\Desktop\\sideproject\\mes_api_too_check\\MesApiTooCheck\\MesApiTooCheck.csproj",
+        "projectUniqueName": "C:\\Users\\talem\\OneDrive\\Desktop\\sideproject\\mes_api_too_check\\MesApiTooCheck\\MesApiTooCheck.csproj",
         "projectName": "MesApiTooCheck",
-        "projectPath": "c:\\Users\\talem\\OneDrive\\Desktop\\sideproject\\mes_api_too_check\\MesApiTooCheck\\MesApiTooCheck.csproj",
+        "projectPath": "C:\\Users\\talem\\OneDrive\\Desktop\\sideproject\\mes_api_too_check\\MesApiTooCheck\\MesApiTooCheck.csproj",
         "packagesPath": "C:\\Users\\talem\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\talem\\OneDrive\\Desktop\\sideproject\\mes_api_too_check\\MesApiTooCheck\\obj\\",
+        "outputPath": "C:\\Users\\talem\\OneDrive\\Desktop\\sideproject\\mes_api_too_check\\MesApiTooCheck\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

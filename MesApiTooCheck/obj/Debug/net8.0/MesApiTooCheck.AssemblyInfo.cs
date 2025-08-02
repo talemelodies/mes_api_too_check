@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MesApiTooCheck")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06c6ed0d9eb9f79d7f0e9302c1f494dfe68aadc4")]
 [assembly: System.Reflection.AssemblyProductAttribute("MesApiTooCheck")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MesApiTooCheck")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
